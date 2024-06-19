@@ -1,11 +1,11 @@
 # WRITE YOUR CODE HERE
 import requests
-import statsapi
 import re
 
 API_KEY = "79961ed861624e9291b6e4f42c2c83c0"
 
 url = "https://api.sportsdata.io/v3/mlb/scores/json/ScoresBasic/2017-SEP-{}?key=79961ed861624e9291b6e4f42c2c83c0"
+#https://sportsdata.io/developers/api-documentation/mlb#/endpoint/scores-by-date
 
 headers = {
     "Ocp-Apim-Subscription-Key": API_KEY
