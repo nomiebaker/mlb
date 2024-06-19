@@ -12,4 +12,9 @@ headers = {
 
 response = requests.get(url, headers=headers)
 
-print(response.json())
+#print(response.json())
+allGames = response.json()
+numGames = len(allGames)
+for i in range(numGames):
+    if (allGames[i]['AwayTeam'] == 'ATL' or allGames[i]['HomeTeam'] == 'ATL'):
+        print(allGames[i])
